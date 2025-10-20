@@ -11,7 +11,7 @@ st.title("Jumia E-commerce Data Analysis Dashboard")
 # load data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/olushola/OneDrive/Desktop/jumia e-commerce-analysis/jumia_cleaned.csv")
+    df = pd.read_csv("jumia_cleaned.csv")
     return df
 
 df = load_data()
@@ -84,4 +84,5 @@ st.dataframe(corr.style.background_gradient(cmap='coolwarm'))
 
 # Footer
 st.markdown('---')
+
 st.caption('Developed by Olushola Adeboye | Data sourced from Jumia Nigeria')
